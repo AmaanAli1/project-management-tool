@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import "./config/db";
 import authRoutes from "./routes/authRoutes";
+import workspaceRoutes from "./routes/workspaceRoutes";
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 
 // Routes
 app.use("/auth", authRoutes);
+app.use("/workspaces", workspaceRoutes);
 
 // Test route
 app.get("/", (req, res) => {

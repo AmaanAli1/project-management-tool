@@ -90,12 +90,12 @@ notifications
 
 *AUTH ENDPOINTS*
 
-POST /auth/register
+POST /auth/register ✅
 - Public (no auth required)
 - Body: { email, password, name }
 - Returns: { user: {id, email, name }, token }
 
-POST /auth/login
+POST /auth/login ✅
 - Public
 - Body: { email, password }
 - Returns: { user: { id, email, name }, token }
@@ -267,9 +267,9 @@ PUT /notifications/read-all
 **FEATURE PRIORITY**
 
 **MVP (Must Have)**
-    - User registeration and login (JWT auth)
-    - Create workspace
-    - Invite existing users to workspace (manual, by email lookup)
+    ✅ User registeration and login (JWT auth)
+    ✅ Create workspace
+    ✅ Invite existing users to workspace (manual, by email lookup)
     - Create projects within workspace
     - Create tasks with title, description, priority, status
     - Assign tasks to users
